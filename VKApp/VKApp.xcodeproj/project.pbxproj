@@ -40,6 +40,7 @@
 		FA2BD26D26B847D7002C54D5 /* Unrealm in Frameworks */ = {isa = PBXBuildFile; productRef = FA2BD26C26B847D7002C54D5 /* Unrealm */; };
 		FA2BD26F26B84AD3002C54D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD26E26B84AD3002C54D5 /* AppDelegate.swift */; };
 		FA2BD27126B84ADC002C54D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27026B84ADC002C54D5 /* SceneDelegate.swift */; };
+		FA2BD27326B858A9002C54D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27226B858A9002C54D5 /* Root.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		FA2BD26726B84645002C54D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA2BD26E26B84AD3002C54D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2BD27026B84ADC002C54D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA2BD27226B858A9002C54D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,6 @@
 				FA2BD22726B845A1002C54D5 /* Operations */,
 				FA2BD22C26B845AD002C54D5 /* Core */,
 				FA2BD23E26B845B4002C54D5 /* Models */,
-				FA2BD26726B84645002C54D5 /* Main.storyboard */,
 				FA2BD26126B845F2002C54D5 /* Resources */,
 				FA2BD21B26B844E6002C54D5 /* Info.plist */,
 			);
@@ -159,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2BD23F26B845B4002C54D5 /* User.swift */,
+				FA2BD27226B858A9002C54D5 /* Root.swift */,
 				FA2BD24026B845B4002C54D5 /* Group.swift */,
 				FA2BD24126B845B4002C54D5 /* News.swift */,
 			);
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2BD22526B8457E002C54D5 /* LoginPageViewController.swift */,
+				FA2BD26726B84645002C54D5 /* Main.storyboard */,
 				FA2BD25826B845DF002C54D5 /* GroupsTab */,
 				FA2BD25326B845D4002C54D5 /* NewsTab */,
 				FA2BD24626B845CB002C54D5 /* FriendsTab */,
@@ -304,6 +307,7 @@
 				FA2BD23B26B845AD002C54D5 /* FactoryUI.swift in Sources */,
 				FA2BD23726B845AD002C54D5 /* Utilities.swift in Sources */,
 				FA2BD23626B845AD002C54D5 /* ImageLoader.swift in Sources */,
+				FA2BD27326B858A9002C54D5 /* Root.swift in Sources */,
 				FA2BD24226B845B4002C54D5 /* User.swift in Sources */,
 				FA2BD24E26B845CB002C54D5 /* FriendsTableViewCell.swift in Sources */,
 				FA2BD25226B845CB002C54D5 /* CollectionViewController.swift in Sources */,

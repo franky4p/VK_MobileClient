@@ -54,12 +54,12 @@ class NewsTableViewController: UITableViewController {
         if let currentNews = news?[indexPath.row] {
             cell.news = currentNews
             if currentNews.id ?? 0 >= 0 {
-                if let author = Keeper.getUserFromBase(currentNews.id ?? 0) {
+                if let author = Keeper.getObjectFromBase(currentNews.id ?? 0, type: Friend.self) {
                     cell.news?.screenName = "\(author.firstName) \(author.lastName)"
                     cell.news?.photoAuthor = author.photo
                 }
             } else {
-                if let author = Keeper.getGroupFromBase(currentNews.id ?? 0 * -1) {
+                if let author = Keeper.getObjectFromBase(currentNews.id ?? 0 * -1, type: MyGroup.self) {
                     cell.news?.screenName = author.screenName
                 }
             }

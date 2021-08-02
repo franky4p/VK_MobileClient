@@ -35,7 +35,7 @@ class FriendsTableViewController: UITableViewController, UISearchResultsUpdating
     }
     
     func loadFriends() {
-        friends = Keeper.loadData(Friend.self).sorted(byKeyPath: "lastName")
+        friends = Keeper.loadData(Friend.self)?.sorted(byKeyPath: "lastName")
         token = friends?.observe{ [weak self] (changes) in
             guard let tableView = self?.tableView else { return }
             switch changes {

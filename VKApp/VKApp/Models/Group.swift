@@ -5,7 +5,6 @@
 //  Created by macbook on 01.11.2020.
 //
 
-import Foundation
 import Unrealm
 import UIKit
 

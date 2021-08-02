@@ -7,7 +7,7 @@
 
 import Foundation
 import Unrealm
-import RealmSwift
+
 
 final class Session {
     var token: String?
@@ -57,7 +57,7 @@ final class Session {
     }
     
     func getDateFromServer<T>(typeDate: T.Type, request: URLRequest) where T:Decodable, T:Realmable {
-        Session.shared.requestToAPI(url: request, typeReceiver: Root<T>.self){ results in
+        Session.shared.requestToAPI(url: request, typeReceiver: Root<T>.self) { results in
             var data: [T] = [T]()
             switch results {
             case .success(let response):

@@ -10,9 +10,8 @@ import UIKit
 final class ImageLoader {
     static private let cache = NSCache<NSString, UIImage>()
     
-    static private func loadImage(urlString: String, completion: @escaping (UIImage?) -> ()) {
+    static private func loadImage(url: URL, completion: @escaping (UIImage?) -> ()) {
         DispatchQueue.global().async {
-            let url = URL(string: urlString)!
             guard let data = try? Data(contentsOf: url) else { return }
             let image = UIImage(data: data)
             
@@ -28,7 +27,8 @@ final class ImageLoader {
         if let cachedImage = cache.object(forKey: itemURL) {
             complition(cachedImage)
         } else {
-            loadImage(urlString:imgURLString) { (loadImage) in
+            guard let url = URL(string: imgURLString) else { return }
+            loadImage(url: url) { (loadImage) in
                 guard let loadImage = loadImage else { return }
                 
                 cache.setObject(loadImage, forKey: itemURL)
