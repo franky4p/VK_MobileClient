@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Unrealm
 import UIKit
 
 class Group {
@@ -16,6 +17,26 @@ class Group {
         self.name = name
     }
 }
+
+struct MyGroup: Decodable, Realmable {
+    
+    static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    private enum CodingKeys : String, CodingKey {
+        case id = "id"
+        case name = "name"
+        case photo = "photo_100"
+        case screenName = "screen_name"
+    }
+    
+    var id: Int?
+    var name: String = ""
+    var photo: String?
+    var screenName: String = ""
+}
+
 
 extension Group: CustomStringConvertible {
     var description: String {
