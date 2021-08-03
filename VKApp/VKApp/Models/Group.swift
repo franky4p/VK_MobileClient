@@ -11,7 +11,7 @@ import UIKit
 class Group {
     var name: String
     var avatar = UIImage(named: "icons8-socrates-50")
-    
+
     init(_ name: String) {
         self.name = name
     }
@@ -40,7 +40,7 @@ struct MyGroup: Decodable, Realmable {
 extension Group: CustomStringConvertible {
     var description: String {
         return """
-        \(name) 
+        \(name)
         """
     }
 }

@@ -58,9 +58,9 @@ class NewsTableViewCell: UITableViewCell {
         addSubview(newsImageAuthor)
         newsImageAuthor.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, paddingRight: 0, width: 40, height: 40, enableInsets: false)
         addSubview(authorLabel)
-        authorLabel.anchor(top: topAnchor, left: newsImageAuthor.rightAnchor, bottom: nil, right: nil, paddingTop: 10, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: bounds.size.width, height: 40, enableInsets: false)
+        authorLabel.anchor(top: topAnchor, left: newsImageAuthor.rightAnchor, bottom: nil, right: nil, paddingTop: 10, paddingLeft: 10, paddingBottom: 0, paddingRight: 5, width: bounds.size.width, height: 40, enableInsets: false)
         addSubview(textNewsLabel)
-        textNewsLabel.anchor(top: authorLabel.bottomAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: bounds.size.width, height: 0, enableInsets: false)
+        textNewsLabel.anchor(top: authorLabel.bottomAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: bounds.size.width - 10, height: 0, enableInsets: false)
         
         let stackView = UIStackView(arrangedSubviews: [likesLabel, repostLabel, commentLabel, numberOfViewstLabel])
         stackView.distribution = .equalSpacing
