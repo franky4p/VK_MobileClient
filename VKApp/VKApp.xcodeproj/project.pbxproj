@@ -41,6 +41,12 @@
 		FA2BD26F26B84AD3002C54D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD26E26B84AD3002C54D5 /* AppDelegate.swift */; };
 		FA2BD27126B84ADC002C54D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27026B84ADC002C54D5 /* SceneDelegate.swift */; };
 		FA2BD27326B858A9002C54D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27226B858A9002C54D5 /* Root.swift */; };
+		FAD9D65726CA706B008B94D4 /* NewsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65626CA706B008B94D4 /* NewsViewInput.swift */; };
+		FAD9D65926CA7084008B94D4 /* NewsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65826CA7084008B94D4 /* NewsViewOutput.swift */; };
+		FAD9D65B26CA728A008B94D4 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65A26CA728A008B94D4 /* NewsPresenter.swift */; };
+		FAD9D65D26CA8286008B94D4 /* NewsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */; };
+		FAD9D65F26CA82AD008B94D4 /* NewsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */; };
+		FAD9D66126CA8562008B94D4 /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +84,12 @@
 		FA2BD26E26B84AD3002C54D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2BD27026B84ADC002C54D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA2BD27226B858A9002C54D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		FAD9D65626CA706B008B94D4 /* NewsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewInput.swift; sourceTree = "<group>"; };
+		FAD9D65826CA7084008B94D4 /* NewsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewOutput.swift; sourceTree = "<group>"; };
+		FAD9D65A26CA728A008B94D4 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractorInput.swift; sourceTree = "<group>"; };
+		FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractorOutput.swift; sourceTree = "<group>"; };
+		FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,9 @@
 				FA2BD23F26B845B4002C54D5 /* User.swift */,
 				FA2BD27226B858A9002C54D5 /* Root.swift */,
 				FA2BD24026B845B4002C54D5 /* Group.swift */,
+				FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */,
+				FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */,
+				FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */,
 				FA2BD24126B845B4002C54D5 /* News.swift */,
 			);
 			path = Models;
@@ -197,6 +212,9 @@
 			children = (
 				FA2BD25426B845D4002C54D5 /* NewsTableViewController.swift */,
 				FA2BD25526B845D4002C54D5 /* NewsTableViewCell.swift */,
+				FAD9D65626CA706B008B94D4 /* NewsViewInput.swift */,
+				FAD9D65A26CA728A008B94D4 /* NewsPresenter.swift */,
+				FAD9D65826CA7084008B94D4 /* NewsViewOutput.swift */,
 			);
 			path = NewsTab;
 			sourceTree = "<group>";
@@ -301,22 +319,27 @@
 				FA2BD23D26B845AD002C54D5 /* ControlLike.swift in Sources */,
 				FA2BD22A26B845A1002C54D5 /* GetDataOperation.swift in Sources */,
 				FA2BD25726B845D4002C54D5 /* NewsTableViewCell.swift in Sources */,
+				FAD9D65B26CA728A008B94D4 /* NewsPresenter.swift in Sources */,
 				FA2BD24426B845B4002C54D5 /* News.swift in Sources */,
 				FA2BD22626B8457E002C54D5 /* LoginPageViewController.swift in Sources */,
+				FAD9D65F26CA82AD008B94D4 /* NewsInteractorOutput.swift in Sources */,
 				FA2BD24326B845B4002C54D5 /* Group.swift in Sources */,
 				FA2BD23B26B845AD002C54D5 /* FactoryUI.swift in Sources */,
 				FA2BD23726B845AD002C54D5 /* Utilities.swift in Sources */,
 				FA2BD23626B845AD002C54D5 /* ImageLoader.swift in Sources */,
+				FAD9D65D26CA8286008B94D4 /* NewsInteractorInput.swift in Sources */,
 				FA2BD27326B858A9002C54D5 /* Root.swift in Sources */,
 				FA2BD24226B845B4002C54D5 /* User.swift in Sources */,
 				FA2BD24E26B845CB002C54D5 /* FriendsTableViewCell.swift in Sources */,
 				FA2BD25226B845CB002C54D5 /* CollectionViewController.swift in Sources */,
 				FA2BD24F26B845CB002C54D5 /* CollectionViewCell.swift in Sources */,
 				FA2BD23A26B845AD002C54D5 /* UIImageView+.swift in Sources */,
+				FAD9D65926CA7084008B94D4 /* NewsViewOutput.swift in Sources */,
 				FA2BD25126B845CB002C54D5 /* HeaderTable.swift in Sources */,
 				FA2BD27126B84ADC002C54D5 /* SceneDelegate.swift in Sources */,
 				FA2BD25D26B845DF002C54D5 /* SearchGroupTableViewCell.swift in Sources */,
 				FA2BD25026B845CB002C54D5 /* TableViewControllerNews.swift in Sources */,
+				FAD9D66126CA8562008B94D4 /* NewsInteractor.swift in Sources */,
 				FA2BD25626B845D4002C54D5 /* NewsTableViewController.swift in Sources */,
 				FA2BD25F26B845DF002C54D5 /* GroupTableViewCell.swift in Sources */,
 				FA2BD23826B845AD002C54D5 /* Session.swift in Sources */,
@@ -326,6 +349,7 @@
 				FA2BD23C26B845AD002C54D5 /* Keeper.swift in Sources */,
 				FA2BD24D26B845CB002C54D5 /* FriendsTableViewController.swift in Sources */,
 				FA2BD23926B845AD002C54D5 /* UIView+.swift in Sources */,
+				FAD9D65726CA706B008B94D4 /* NewsViewInput.swift in Sources */,
 				FA2BD22B26B845A1002C54D5 /* AsyncOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
