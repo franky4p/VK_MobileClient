@@ -9,14 +9,14 @@ import Foundation
 import Unrealm
 
 class NewsPresenter: NewsViewOutputProtocol, NewsInteractorOutputProtocol {
-    var interactorInput: NewsInteractorInputProtocol = NewsInteractor()
+    var interactorInput: NewsInteractorInputProtocol?
     
     var news: Results<MyNews>?
     var token: NotificationToken?
     weak var viewInput: NewsViewInputProtocol?
     
     func getNews() {
-        interactorInput.loadNews()
+        interactorInput?.loadNews()
     }
     
     func handleNewsLoaded(_ news: Results<MyNews>) {

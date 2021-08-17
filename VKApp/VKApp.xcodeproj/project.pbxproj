@@ -47,7 +47,23 @@
 		FAD9D65D26CA8286008B94D4 /* NewsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */; };
 		FAD9D65F26CA82AD008B94D4 /* NewsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */; };
 		FAD9D66126CA8562008B94D4 /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */; };
+		FAD9D66826CBA102008B94D4 /* NewsModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D66726CBA102008B94D4 /* NewsModul.swift */; };
+		FAD9D67226CBB4AB008B94D4 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FAD9D67126CBB4AB008B94D4 /* Swinject */; };
+		FAD9D67426CBBBCB008B94D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D67326CBBBCB008B94D4 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAD9D66F26CBA4F4008B94D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA2BD20A26B844E5002C54D5 /* VKApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +106,8 @@
 		FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractorInput.swift; sourceTree = "<group>"; };
 		FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractorOutput.swift; sourceTree = "<group>"; };
 		FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
+		FAD9D66726CBA102008B94D4 /* NewsModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModul.swift; sourceTree = "<group>"; };
+		FAD9D67326CBBBCB008B94D4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,7 @@
 			files = (
 				FA2BD26B26B847D7002C54D5 /* UnrealmObjC in Frameworks */,
 				FA2BD26D26B847D7002C54D5 /* Unrealm in Frameworks */,
+				FAD9D67226CBB4AB008B94D4 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +145,7 @@
 			children = (
 				FA2BD26E26B84AD3002C54D5 /* AppDelegate.swift */,
 				FA2BD27026B84ADC002C54D5 /* SceneDelegate.swift */,
+				FAD9D66226CB9FC8008B94D4 /* NewsViper */,
 				FA2BD24526B845C0002C54D5 /* UI */,
 				FA2BD22726B845A1002C54D5 /* Operations */,
 				FA2BD22C26B845AD002C54D5 /* Core */,
@@ -174,10 +194,6 @@
 				FA2BD23F26B845B4002C54D5 /* User.swift */,
 				FA2BD27226B858A9002C54D5 /* Root.swift */,
 				FA2BD24026B845B4002C54D5 /* Group.swift */,
-				FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */,
-				FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */,
-				FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */,
-				FA2BD24126B845B4002C54D5 /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +203,7 @@
 			children = (
 				FA2BD22526B8457E002C54D5 /* LoginPageViewController.swift */,
 				FA2BD26726B84645002C54D5 /* Main.storyboard */,
+				FAD9D67326CBBBCB008B94D4 /* TabBarController.swift */,
 				FA2BD25826B845DF002C54D5 /* GroupsTab */,
 				FA2BD25326B845D4002C54D5 /* NewsTab */,
 				FA2BD24626B845CB002C54D5 /* FriendsTab */,
@@ -210,11 +227,7 @@
 		FA2BD25326B845D4002C54D5 /* NewsTab */ = {
 			isa = PBXGroup;
 			children = (
-				FA2BD25426B845D4002C54D5 /* NewsTableViewController.swift */,
 				FA2BD25526B845D4002C54D5 /* NewsTableViewCell.swift */,
-				FAD9D65626CA706B008B94D4 /* NewsViewInput.swift */,
-				FAD9D65A26CA728A008B94D4 /* NewsPresenter.swift */,
-				FAD9D65826CA7084008B94D4 /* NewsViewOutput.swift */,
 			);
 			path = NewsTab;
 			sourceTree = "<group>";
@@ -239,6 +252,54 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FAD9D66226CB9FC8008B94D4 /* NewsViper */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9D66626CBA050008B94D4 /* Entity */,
+				FAD9D66526CB9FF8008B94D4 /* Interactor */,
+				FAD9D66426CB9FEC008B94D4 /* Presenter */,
+				FAD9D66326CB9FDD008B94D4 /* View */,
+				FAD9D66726CBA102008B94D4 /* NewsModul.swift */,
+			);
+			path = NewsViper;
+			sourceTree = "<group>";
+		};
+		FAD9D66326CB9FDD008B94D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9D65826CA7084008B94D4 /* NewsViewOutput.swift */,
+				FAD9D65626CA706B008B94D4 /* NewsViewInput.swift */,
+				FA2BD25426B845D4002C54D5 /* NewsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD9D66426CB9FEC008B94D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9D65A26CA728A008B94D4 /* NewsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAD9D66526CB9FF8008B94D4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9D65C26CA8286008B94D4 /* NewsInteractorInput.swift */,
+				FAD9D65E26CA82AD008B94D4 /* NewsInteractorOutput.swift */,
+				FAD9D66026CA8562008B94D4 /* NewsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FAD9D66626CBA050008B94D4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BD24126B845B4002C54D5 /* News.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +310,7 @@
 				FA2BD20626B844E5002C54D5 /* Sources */,
 				FA2BD20726B844E5002C54D5 /* Frameworks */,
 				FA2BD20826B844E5002C54D5 /* Resources */,
+				FAD9D66F26CBA4F4008B94D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +320,7 @@
 			packageProductDependencies = (
 				FA2BD26A26B847D7002C54D5 /* UnrealmObjC */,
 				FA2BD26C26B847D7002C54D5 /* Unrealm */,
+				FAD9D67126CBB4AB008B94D4 /* Swinject */,
 			);
 			productName = VKApp;
 			productReference = FA2BD20A26B844E5002C54D5 /* VKApp.app */;
@@ -288,6 +351,7 @@
 			mainGroup = FA2BD20126B844E5002C54D5;
 			packageReferences = (
 				FA2BD26926B847D7002C54D5 /* XCRemoteSwiftPackageReference "Unrealm" */,
+				FAD9D67026CBB4AB008B94D4 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = FA2BD20B26B844E5002C54D5 /* Products */;
 			projectDirPath = "";
@@ -320,6 +384,7 @@
 				FA2BD22A26B845A1002C54D5 /* GetDataOperation.swift in Sources */,
 				FA2BD25726B845D4002C54D5 /* NewsTableViewCell.swift in Sources */,
 				FAD9D65B26CA728A008B94D4 /* NewsPresenter.swift in Sources */,
+				FAD9D66826CBA102008B94D4 /* NewsModul.swift in Sources */,
 				FA2BD24426B845B4002C54D5 /* News.swift in Sources */,
 				FA2BD22626B8457E002C54D5 /* LoginPageViewController.swift in Sources */,
 				FAD9D65F26CA82AD008B94D4 /* NewsInteractorOutput.swift in Sources */,
@@ -347,6 +412,7 @@
 				FA2BD26F26B84AD3002C54D5 /* AppDelegate.swift in Sources */,
 				FA2BD26026B845DF002C54D5 /* GroupTableViewController.swift in Sources */,
 				FA2BD23C26B845AD002C54D5 /* Keeper.swift in Sources */,
+				FAD9D67426CBBBCB008B94D4 /* TabBarController.swift in Sources */,
 				FA2BD24D26B845CB002C54D5 /* FriendsTableViewController.swift in Sources */,
 				FA2BD23926B845AD002C54D5 /* UIView+.swift in Sources */,
 				FAD9D65726CA706B008B94D4 /* NewsViewInput.swift in Sources */,
@@ -554,6 +620,14 @@
 				kind = branch;
 			};
 		};
+		FAD9D67026CBB4AB008B94D4 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -566,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA2BD26926B847D7002C54D5 /* XCRemoteSwiftPackageReference "Unrealm" */;
 			productName = Unrealm;
+		};
+		FAD9D67126CBB4AB008B94D4 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD9D67026CBB4AB008B94D4 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

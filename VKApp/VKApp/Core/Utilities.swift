@@ -27,14 +27,4 @@ func arrayFirstCaracterName(_ arrayUser: [Friend]) -> [String] {
     return Array(caracterName).sorted()
 }
 
-func createViperModul() -> NewsViewOutputProtocol {
-    //не знаю где должен собироться viper модуль при использованиии сториборд
-    //поэтому сделаю здесь
-    let presenter = NewsPresenter()
-    let interactor = NewsInteractor()
-    
-    presenter.interactorInput = interactor
-    interactor.interactorOutput = presenter
-    
-    return presenter
-}
+
