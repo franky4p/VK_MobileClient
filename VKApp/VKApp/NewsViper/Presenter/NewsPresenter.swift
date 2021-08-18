@@ -10,10 +10,8 @@ import Unrealm
 
 class NewsPresenter: NewsViewOutputProtocol, NewsInteractorOutputProtocol {
     var interactorInput: NewsInteractorInputProtocol?
-    
-    var news: Results<MyNews>?
-    var token: NotificationToken?
     weak var viewInput: NewsViewInputProtocol?
+    var news: Results<MyNews>?
     
     func getNews() {
         interactorInput?.loadNews()

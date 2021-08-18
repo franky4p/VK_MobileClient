@@ -10,7 +10,6 @@ import Unrealm
 
 protocol NewsViewOutputProtocol {
     var news: Results<MyNews>? { get }
-    var token: NotificationToken? { get }
     
     func getNews()
 }

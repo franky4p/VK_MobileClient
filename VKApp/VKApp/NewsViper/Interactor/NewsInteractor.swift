@@ -6,13 +6,25 @@
 //
 
 import Foundation
+import Unrealm
 
 class NewsInteractor: NewsInteractorInputProtocol {
     weak var interactorOutput: NewsInteractorOutputProtocol?
+    var news: Results<MyNews>?
+    var token: NotificationToken?
     
     func loadNews() {
-        if let result = Keeper.loadData(MyNews.self) {
-            interactorOutput?.handleNewsLoaded(result)
+        guard let news = Keeper.loadData(MyNews.self) else {
+            return
+        }
+        
+        token = news.observe { [weak self] (changes) in
+            switch changes {
+            case .error(let error):
+                fatalError("\(error)")
+            default:
+                self?.interactorOutput?.handleNewsLoaded(news)
+            }
         }
     }
 }
